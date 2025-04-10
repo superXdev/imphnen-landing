@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-   title: "IMPHNEN - Ikatan Mandiri Programmer Handal",
+   title: "IMPHNEN - Ingin Menjadi Programmer Handal?",
    description: "Komunitas belajar programming untuk semua level",
 };
 
