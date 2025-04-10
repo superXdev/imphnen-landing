@@ -158,7 +158,7 @@ export default function Testimonials() {
                            98%
                         </div>
                         <div className="text-sm text-muted-foreground">
-                           Tingkat Kepuasan
+                           Tingkat Kemalasan
                         </div>
                      </div>
                      <div className="rounded-lg border p-4 text-center">
@@ -182,7 +182,7 @@ export default function Testimonials() {
                            24/7
                         </div>
                         <div className="text-sm text-muted-foreground">
-                           Dukungan Komunitas
+                           Yapping
                         </div>
                      </div>
                   </div>
