@@ -95,7 +95,7 @@ export default function Hero() {
                   <div className="flex items-center gap-8">
                      <div className="flex flex-col items-center">
                         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           10K+
+                           100K+
                         </div>
                         <div className="text-xs text-muted-foreground">
                            Member
@@ -116,7 +116,7 @@ export default function Hero() {
                            24/7
                         </div>
                         <div className="text-xs text-muted-foreground">
-                           Keaktifan
+                           Yapping
                         </div>
                      </div>
                   </div>

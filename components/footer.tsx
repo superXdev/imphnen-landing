@@ -8,15 +8,6 @@ export default function Footer() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                     <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-primary to-blue-400">
-                        <Image
-                           src="/placeholder.svg?height=32&width=32"
-                           alt="IMPHNEN Logo"
-                           width={32}
-                           height={32}
-                           className="object-cover"
-                        />
-                     </div>
                      <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
                         IMPHNEN
                      </span>
