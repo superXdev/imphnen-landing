@@ -56,16 +56,17 @@ export default function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                >
-                  <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm">
+                  <div className="inline-flex items-center rounded-full border md:max-w-96 px-3 py-1 text-sm">
                      <Sparkles className="mr-1 h-3.5 w-3.5 text-primary" />
                      <span>Komunitas Programmer Indonesia</span>
                   </div>
 
                   <div className="space-y-4">
                      <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground/70">
-                        Kode Hebat, <br />
+                        Programmer Handal
+                        <br />
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           Tanpa Batas
+                           Tanpa Ribet
                         </span>
                      </h1>
                      <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -95,7 +96,7 @@ export default function Hero() {
                   <div className="flex items-center gap-8">
                      <div className="flex flex-col items-center">
                         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           10K+
+                           100K+
                         </div>
                         <div className="text-xs text-muted-foreground">
                            Member
@@ -116,7 +117,7 @@ export default function Hero() {
                            24/7
                         </div>
                         <div className="text-xs text-muted-foreground">
-                           Support
+                           Keaktifan
                         </div>
                      </div>
                   </div>
@@ -141,7 +142,7 @@ export default function Hero() {
                      <div className="relative z-10 rounded-2xl overflow-hidden border shadow-2xl">
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-blue-400/10" />
                         <Image
-                           src="/placeholder.svg?height=500&width=600"
+                           src="/hero.jpeg"
                            width={600}
                            height={500}
                            alt="IMPHNEN Programming Community"
