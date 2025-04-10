@@ -107,7 +107,7 @@ export default function Header() {
          {/* Mobile Menu */}
          {mobileMenuOpen && (
             <div className="md:hidden border-t bg-background/95 backdrop-blur-md">
-               <nav className="container flex flex-col py-4">
+               <nav className="container flex flex-col py-4 text-center">
                   <Link
                      href="#fitur"
                      className="py-3 text-sm font-medium border-b border-border/50"

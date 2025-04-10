@@ -56,15 +56,14 @@ export default function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                >
-                  <div className="inline-flex items-center rounded-full border md:max-w-96 px-3 py-1 text-sm">
+                  <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm">
                      <Sparkles className="mr-1 h-3.5 w-3.5 text-primary" />
                      <span>Komunitas Programmer Indonesia</span>
                   </div>
 
                   <div className="space-y-4">
                      <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground/70">
-                        Programmer Handal
-                        <br />
+                        Programmer Handal, <br />
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
                            Tanpa Ribet
                         </span>
@@ -96,7 +95,7 @@ export default function Hero() {
                   <div className="flex items-center gap-8">
                      <div className="flex flex-col items-center">
                         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           100K+
+                           10K+
                         </div>
                         <div className="text-xs text-muted-foreground">
                            Member
