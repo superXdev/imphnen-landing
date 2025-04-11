@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef  } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Code, Sparkles, Users } from "lucide-react";
-import { motion } from "framer-motion";
+import  Counter from "@/components/ui/counter"
+import { Clock, Code, School, Sparkles, Users } from "lucide-react";
+import { motion , useInView} from "framer-motion";
 
 export default function Hero() {
    const [scrollY, setScrollY] = useState(0);
+   const ref = useRef(null);
+   
+   const isInView = useInView(ref, { once: true });
 
    useEffect(() => {
       const handleScroll = () => {
          setScrollY(window.scrollY);
       };
 
+      
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
    }, []);
@@ -94,19 +99,21 @@ export default function Hero() {
 
                   <div className="flex items-center gap-8">
                      <div className="flex flex-col items-center">
-                        <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           100K+
+                        <div ref={ref} className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
+                           {isInView && <Counter to={100} suffix="K+" />}
                         </div>
-                        <div className="text-xs text-muted-foreground">
+                         <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                           <Users className="h-4 w-4 text-blue-400" />
                            Member
                         </div>
                      </div>
                      <div className="h-10 border-r border-border"></div>
                      <div className="flex flex-col items-center">
                         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           500+
+                           {isInView && <Counter to={500} suffix="+" />}
                         </div>
-                        <div className="text-xs text-muted-foreground">
+                        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                           <School className="h-4 w-4 text-blue-400" />
                            Tutorial
                         </div>
                      </div>
@@ -115,7 +122,8 @@ export default function Hero() {
                         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
                            24/7
                         </div>
-                        <div className="text-xs text-muted-foreground">
+                        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                           <Clock className="h-4 w-4 text-blue-400" />
                            Yapping
                         </div>
                      </div>

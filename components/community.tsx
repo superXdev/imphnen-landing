@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { useInView } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import  Counter from "@/components/ui/counter"
 import { Facebook, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -127,25 +128,25 @@ export default function Community() {
         >
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-              10K+
+             {isInView && <Counter to={10} suffix="K+" />}
             </div>
             <div className="text-sm text-muted-foreground">Member Aktif</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-              50+
+             {isInView && <Counter to={50} suffix="+" />}
             </div>
             <div className="text-sm text-muted-foreground">Event Bulanan</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-              100+
+             {isInView && <Counter to={100} suffix="+" />}
             </div>
             <div className="text-sm text-muted-foreground">Mentor Profesional</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-              5K+
+             {isInView && <Counter to={5} suffix="K+" />}
             </div>
             <div className="text-sm text-muted-foreground">Diskusi Mingguan</div>
           </div>
