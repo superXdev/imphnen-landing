@@ -81,12 +81,14 @@ export default function Hero() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                     <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-primary to-blue-400 hover:from-primary/90 hover:to-blue-400/90 transition-all duration-300"
-                     >
-                        Mulai Belajar
-                     </Button>
+                     <a href="https://facebook.com">
+                        <Button
+                           size="lg"
+                           className="bg-gradient-to-r from-primary to-blue-400 hover:from-primary/90 hover:to-blue-400/90 transition-all duration-300"
+                        >
+                           Mulai Belajar
+                        </Button>
+                     </a>
                      <Button
                         size="lg"
                         variant="outline"
