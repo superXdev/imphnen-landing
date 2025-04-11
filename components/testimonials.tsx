@@ -5,6 +5,8 @@ import { useInView } from "framer-motion";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import  Counter from "@/components/ui/counter"
+
 
 export default function Testimonials() {
    const ref = useRef(null);
@@ -141,7 +143,7 @@ export default function Testimonials() {
                      <h3 className="text-2xl md:text-3xl font-bold mb-4">
                         Bergabunglah dengan{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           10,000+
+                           {isInView && <Counter to={10000} duration={2} suffix="+" />} <br />
                         </span>{" "}
                         programmer Indonesia lainnya
                      </h3>
@@ -155,7 +157,8 @@ export default function Testimonials() {
                   <div className="grid grid-cols-2 gap-4">
                      <div className="rounded-lg border p-4 text-center">
                         <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           98%
+                           {/* 98% */}
+                           {isInView && <Counter to={98} suffix="%" />}
                         </div>
                         <div className="text-sm text-muted-foreground">
                            Tingkat Kemalasan
@@ -163,7 +166,7 @@ export default function Testimonials() {
                      </div>
                      <div className="rounded-lg border p-4 text-center">
                         <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           4.9/5
+                           {isInView && <Counter to={4.9} decimals={1} suffix="/5" />}
                         </div>
                         <div className="text-sm text-muted-foreground">
                            Rating Drama
@@ -171,7 +174,7 @@ export default function Testimonials() {
                      </div>
                      <div className="rounded-lg border p-4 text-center">
                         <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           85%
+                           {isInView && <Counter to={85} suffix="%" />}
                         </div>
                         <div className="text-sm text-muted-foreground">
                            Mendapat Pekerjaan
@@ -179,7 +182,8 @@ export default function Testimonials() {
                      </div>
                      <div className="rounded-lg border p-4 text-center">
                         <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">
-                           24/7
+                           {isInView && <Counter to={24} suffix="/7" />}
+
                         </div>
                         <div className="text-sm text-muted-foreground">
                            Yapping
